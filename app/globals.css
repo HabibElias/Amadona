@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@config "../tailwind.config.js";
+
+@theme {
+  --font-sans: var(--font-lato), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: var(--font-playfair), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+:root {
+  --color-gold: #d4af37;
+  --color-emerald: #50c878;
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .bg-gold {
+    background-color: var(--color-gold);
+  }
+
+  .text-gold {
+    color: var(--color-gold);
+  }
+
+  .hover\:bg-gold:hover {
+    background-color: var(--color-gold);
+  }
+
+  .hover\:text-gold:hover {
+    color: var(--color-gold);
+  }
+}
