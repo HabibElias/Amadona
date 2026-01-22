@@ -11,7 +11,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center text-white">
         <Image
-          src="/jason-d-QvrVBfWajbo-unsplash.jpg"
+          src="/hero.jpg"
           alt="Gemstones"
           fill
           style={{ objectFit: "cover" }}

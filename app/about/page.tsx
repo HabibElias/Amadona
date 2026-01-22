@@ -141,6 +141,40 @@ export default function AboutUs() {
                 </div>
             </section>
 
+            {/* Mineral Portfolio Section */}
+            <section className="py-20 bg-surface">
+                <div className="container mx-auto px-4">
+                    <motion.div
+                        className="max-w-5xl mx-auto"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+                            Ethiopia&apos;s Mineral Portfolio
+                        </h2>
+                        <p className="text-lg text-muted mb-8">
+                            Ethiopia combines world-class gemstones with strategic industrial and energy minerals. Key highlights:
+                        </p>
+                        <div className="grid md:grid-cols-2 gap-8 text-muted">
+                            <div className="space-y-4">
+                                <p><strong>Metallic minerals:</strong> High-grade gold (Lega Dembi, Tulu Kapi) plus copper and iron ore with room to scale.</p>
+                                <p><strong>Industrial minerals:</strong> Abundant limestone, gypsum, potash, and marble; Danakil potash ranks among the largest globally.</p>
+                                <p><strong>Gemstones:</strong> Globally prized Welo opals, emeralds, sapphires, and tourmalines with vibrant play-of-color and clarity.</p>
+                                <p><strong>Energy minerals:</strong> Coal plus underexplored oil and gas reserves that strengthen regional energy security.</p>
+                            </div>
+                            <div className="space-y-4">
+                                <p><strong>Construction minerals:</strong> Sand, gravel, clay, basalt, and granite power local infrastructure and export quality stone.</p>
+                                <p><strong>Fertilizer minerals:</strong> Massive potash and phosphate reserves in Danakil position Ethiopia as a future supplier.</p>
+                                <p><strong>Rare earth & battery metals:</strong> Emerging tantalum, niobium, and lithium prospects support high-tech and energy transition demand.</p>
+                                <p className="italic">Overall: high quality, plentiful, and still largely untapped—placing Ethiopia as a rising African mining leader.</p>
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+
             {/* Vision Section */}
             <section className="py-20 bg-surface">
                 <div className="container mx-auto px-4">

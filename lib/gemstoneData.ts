@@ -139,5 +139,65 @@ export const gemstones: Gemstone[] = [
 		description:
 			"Dense tantalum specimen valued for its corrosion resistance.",
 	},
+	{
+		id: 14,
+		name: "Danakil Potash",
+		type: "Potash",
+		color: "Pink",
+		size: "Bulk sample",
+		image: "/gemImages/Potash/7e420e4f0f791136781947cd9a447457.jpg",
+		description:
+			"High-grade potash from the Danakil Depression, ideal for fertilizer production and among the world’s largest reserves.",
+	},
+	{
+		id: 15,
+		name: "Afar Phosphate",
+		type: "Phosphate",
+		color: "Buff",
+		size: "Bulk sample",
+		image: "/gemImages/Phosphate/2b49cca9721f1a49663a3ecd9d399fc8.jpg",
+		description:
+			"Phosphate-rich rock supporting fertilizer feedstocks from Ethiopia’s emerging Afar deposits.",
+	},
+	{
+		id: 16,
+		name: "Lithium Pegmatite",
+		type: "Lithium",
+		color: "Pale Gray",
+		size: "Core slice",
+		image: "/gemImages/Lithium/33f517fc0c999a2c2638c3089b148f0b.jpg",
+		description:
+			"Lithium-bearing pegmatite sample highlighting Ethiopia’s early-stage battery metal potential in the south.",
+	},
+	{
+		id: 17,
+		name: "Welo Gypsum",
+		type: "Gypsum",
+		color: "White",
+		size: "Panel sample",
+		image: "/gemImages/gypsum/3394c8603e6f8decbfd7b26f290278a8.jpg",
+		description:
+			"Clean gypsum suitable for cement and wallboard, reflecting Ethiopia’s abundant industrial mineral base.",
+	},
+	{
+		id: 18,
+		name: "Limestone Block",
+		type: "Limestone",
+		color: "Cream",
+		size: "Quarry block",
+		image: "/gemImages/limestones/747cd903286863e9363e2f2d71343110.jpg",
+		description:
+			"Dense limestone supporting construction and cement production across Ethiopia’s infrastructure projects.",
+	},
+	{
+		id: 19,
+		name: "Frontier Oil Sand",
+		type: "Oil",
+		color: "Dark Brown",
+		size: "Reservoir sample",
+		image: "/gemImages/Oil/461ffafbe015db322acfa48471c2ffba.jpg",
+		description:
+			"Oil-bearing sand illustrating Ethiopia’s underexplored hydrocarbon potential alongside coal resources.",
+	},
 ]
 
