@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { Search, X } from "lucide-react"
 import { Gemstone, gemstones } from "../../lib/gemstoneData"
+import { testimonials } from "../../lib/testimonials"
 
 
 // Gemstones are now imported from lib/gemstoneData
@@ -29,26 +30,7 @@ const collections = [
   },
 ]
 
-const testimonials = [
-  {
-    name: "Sarah Johnson",
-    location: "New York, USA",
-    quote: "The quality and beauty of the emerald I purchased exceeded my expectations. Exceptional service!",
-    image: "/gemImages/Opal/90d3744a4f694cd509d44d7f5fafa15e.jpg",
-  },
-  {
-    name: "Michael Chen",
-    location: "Hong Kong",
-    quote: "As a collector, I'm impressed by the rare gemstones and expert knowledge this company offers.",
-    image: "/gemImages/Ruby/d692f610ecbf8d06fdbf3bef214487c4.jpg",
-  },
-  {
-    name: "Emma Rodriguez",
-    location: "London, UK",
-    quote: "The gemstone education resources helped me make an informed decision. I'm thrilled with my purchase!",
-    image: "/gemImages/Granite/d3b2c6d87accc13c0cca7627b34d5d0c.jpg",
-  },
-]
+// Testimonials imported from lib/testimonials
 
 export default function CatalogPage() {
   const router = useRouter()
@@ -311,7 +293,7 @@ export default function CatalogPage() {
                     alt={testimonial.name}
                     width={60}
                     height={60}
-                    className="rounded-full mr-4"
+                    className="rounded-full mr-4 h-15 object-top object-cover"
                   />
                   <div>
                     <h3 className="font-serif font-bold">{testimonial.name}</h3>

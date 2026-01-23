@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Award, Globe, Diamond } from "lucide-react";
 import { gemstones } from "../lib/gemstoneData";
+import { testimonials as sharedTestimonials } from "../lib/testimonials";
 
 export default function Home() {
   const featuredGems = gemstones.slice(0, 3);
@@ -124,33 +125,20 @@ export default function Home() {
             What Our Clients Say
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                name: "Michael Chen",
-                role: "Collector",
-                quote:
-                "I've been collecting gemstones for years, and Gemstone Co. consistently provides the rarest and most beautiful specimens I've ever seen.",
-              },
-              {
-                name: "Sarah Johnson",
-                role: "Jewelry Designer",
-                quote:
-                  "The quality of gemstones from Gemstone Co. is unparalleled. Their ethical sourcing practices align perfectly with my brand values.",
-              },
-            ].map((testimonial, index) => (
+            {sharedTestimonials.slice(0, 2).map((testimonial, index) => (
               <div key={index} className="bg-card p-6 rounded-2xl shadow-elevated border border-subtle">
                 <p className="text-lg mb-4">&quot;{testimonial.quote}&quot;</p>
                 <div className="flex items-center">
                   <Image
-                    src={`/avatar${index + 1}.png`}
+                    src={testimonial.image || `/avatar${index + 1}.png`}
                     alt={testimonial.name}
                     width={50}
-                    height={40}
+                    height={50}
                     className="rounded-full h-13 object-top mr-4 object-cover"
                   />
                   <div>
                     <p className="font-bold">{testimonial.name}</p>
-                    <p className="text-muted">{testimonial.role}</p>
+                    <p className="text-muted">{testimonial.role || testimonial.location || "Client"}</p>
                   </div>
                 </div>
               </div>

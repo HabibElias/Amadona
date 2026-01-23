@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
@@ -14,6 +14,14 @@ const fadeIn = {
 };
 
 export default function Contact() {
+    return (
+        <Suspense fallback={<div className="container mx-auto px-4 py-16">Loading contact...</div>}>
+            <ContactContent />
+        </Suspense>
+    );
+}
+
+function ContactContent() {
     const searchParams = useSearchParams();
     const [formData, setFormData] = useState({
         name: "",
@@ -122,7 +130,7 @@ export default function Contact() {
 
             setStatus("success");
             setFormData({ name: "", email: "", subject: "", message: "" });
-        } catch (err) {
+        } catch {
             setStatus("error");
             setSubmitError("Unable to send message right now. Please try again or email amadona@gmail.com.");
         } finally {
