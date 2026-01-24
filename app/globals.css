@@ -69,6 +69,13 @@
     background: var(--accent);
     color: #fff;
   }
+
+  button,
+  input,
+  textarea,
+  select {
+    @apply rounded-lg;
+  }
 }
 
 @layer utilities {

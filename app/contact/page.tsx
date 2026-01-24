@@ -202,7 +202,7 @@ function ContactContent() {
                                     required
                                     aria-invalid={Boolean(errors.name)}
                                     aria-describedby={errors.name ? "name-error" : undefined}
-                                    className="w-full px-4 py-2 border border-subtle rounded-md focus:outline-none focus:ring-2 focus:ring-purple-700 bg-surface text-app"
+                                    className="w-full px-4 py-2 border border-subtle rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-700 bg-surface text-app"
                                 />
                                 {errors.name && (
                                     <p id="name-error" className="mt-1 text-sm text-red-600">
@@ -226,7 +226,7 @@ function ContactContent() {
                                     required
                                     aria-invalid={Boolean(errors.email)}
                                     aria-describedby={errors.email ? "email-error" : undefined}
-                                    className="w-full px-4 py-2 border border-subtle rounded-md focus:outline-none focus:ring-2 focus:ring-purple-700 bg-surface text-app"
+                                    className="w-full px-4 py-2 border border-subtle rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-700 bg-surface text-app"
                                 />
                                 {errors.email && (
                                     <p id="email-error" className="mt-1 text-sm text-red-600">
@@ -250,7 +250,7 @@ function ContactContent() {
                                     required
                                     aria-invalid={Boolean(errors.subject)}
                                     aria-describedby={errors.subject ? "subject-error" : undefined}
-                                    className="w-full px-4 py-2 border border-subtle rounded-md focus:outline-none focus:ring-2 focus:ring-purple-700 bg-surface text-app"
+                                    className="w-full px-4 py-2 border border-subtle rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-700 bg-surface text-app"
                                 />
                                 {errors.subject && (
                                     <p id="subject-error" className="mt-1 text-sm text-red-600">
@@ -274,7 +274,7 @@ function ContactContent() {
                                     aria-invalid={Boolean(errors.message)}
                                     aria-describedby={errors.message ? "message-error" : undefined}
                                     rows={4}
-                                    className="w-full px-4 py-2 border border-subtle rounded-md focus:outline-none focus:ring-2 focus:ring-purple-700 bg-surface text-app"
+                                    className="w-full px-4 py-2 border border-subtle rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-700 bg-surface text-app"
                                 ></textarea>
                                 {errors.message && (
                                     <p id="message-error" className="mt-1 text-sm text-red-600">
@@ -285,7 +285,7 @@ function ContactContent() {
                             <button
                                 type="submit"
                                 disabled={loading}
-                                className="w-full bg-purple-800 text-white px-6 py-3 rounded-md hover:bg-purple-900 transition-colors transform hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed"
+                                className="w-full bg-purple-800 text-white px-6 py-3 rounded-lg hover:bg-purple-900 transition-colors transform hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed"
                             >
                                 {loading ? "Sending..." : "Send Message"}
                             </button>
@@ -336,7 +336,7 @@ function ContactContent() {
                                     style={{ border: 0 }}
                                     allowFullScreen
                                     loading="lazy"
-                                    className="rounded-md"
+                                    className="rounded-lg"
                                 ></iframe>
                             </div>
                         </motion.div>

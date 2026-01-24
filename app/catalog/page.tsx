@@ -77,7 +77,7 @@ export default function CatalogPage() {
                 <input
                   type="text"
                   placeholder="Search gemstones..."
-                  className="w-full pl-10 pr-4 py-2 border border-subtle rounded-md focus:outline-none focus:ring-2 focus:ring-purple-700 bg-card text-app"
+                  className="w-full pl-10 pr-4 py-2 border border-subtle rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-700 bg-card text-app"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -86,7 +86,7 @@ export default function CatalogPage() {
             </div>
             <div className="flex flex-wrap gap-4">
                 <select
-                  className="px-4 py-2 border border-subtle rounded-md focus:outline-none focus:ring-2 focus:ring-purple-700 bg-card text-app"
+                  className="px-4 py-2 border border-subtle rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-700 bg-card text-app"
                   value={filters.type}
                   onChange={(e) => setFilters({ ...filters, type: e.target.value })}
                 >
@@ -98,7 +98,7 @@ export default function CatalogPage() {
                 <option value="Tourmaline">Tourmaline</option>
               </select>
                 <select
-                  className="px-4 py-2 border border-subtle rounded-md focus:outline-none focus:ring-2 focus:ring-purple-700 bg-card text-app"
+                  className="px-4 py-2 border border-subtle rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-700 bg-card text-app"
                   value={filters.color}
                   onChange={(e) => setFilters({ ...filters, color: e.target.value })}
                 >
@@ -140,7 +140,7 @@ export default function CatalogPage() {
                   <p className="text-muted mb-4 line-clamp-2">{gemstone.description}</p>
                   <button
                     onClick={() => setSelectedGemstone(gemstone)}
-                    className="w-full bg-purple-800 text-white px-4 py-2 rounded-md hover:bg-purple-900 transition-colors"
+                    className="w-full bg-purple-800 text-white px-4 py-2 rounded-lg hover:bg-purple-900 transition-colors"
                   >
                     View Details
                   </button>
